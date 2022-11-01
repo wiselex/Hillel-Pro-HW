@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Book</title>
+   <script src="./script.js" defer></script>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <table class="table">
+      <tr>
+          <td><b>Name</b></td>
+          <td><b>Surname</b></td>
+          <td><b>Phone</b></td>
+          <td><b>Action</b></td>
+      </tr>
+      <tr>
+          <td>Harry</td>
+          <td>Potter</td>
+          <td>380735242829</td>
+          <td><button class="del">Delete</button></td>
+      </tr>
+      <tr>
+          <td>Hermione</td>
+          <td>Granger</td>
+          <td>380670259897</td>
+          <td><button class="del">Delete</button></td>
+      </tr>
+      <tr>
+          <td>Ron</td>
+          <td>Weasley</td>
+          <td>380980912525</td>
+          <td><button class="del">Delete</button></td>
+      </tr>
+  </table>
+<table>
+  <tr>
+      <td><input type="text" name="name" class="inp"></td>
+      <td><input type="text" name="surname" class="inp"></td>
+      <td><input type="text" name="phone" onkeypress="return event.charCode>=48 && event.charCode<=57" class="inp"></td>
+      <td><button class="btn">Add Contact</button></td>
+  </tr>
+</table>
+  <script id="itemTemplate" type="text/template">
+       <tr>
+          <td>[name]</td>
+          <td>[surname]</td>
+          <td>[phone]</td>
+          <td><button class="del">Delete</button></td>
+      </tr>
+  </script>
+</body>
+</html>
