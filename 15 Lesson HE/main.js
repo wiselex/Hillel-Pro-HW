@@ -23,7 +23,7 @@ class Tabs {
    addDefaultStyle() {
       this.getDefaultChild(0).classList.add(Tabs.CLASS_BUTTON_CONTAINER);
       this.getDefaultChild(1).classList.add(Tabs.CLASS_CONTENT_LIST);
-
+ 
       const setDefaultClassBtn = this.getDefaultChild(0).children;
       const setDefaultClassContent = this.getDefaultChild(1).children;
 
