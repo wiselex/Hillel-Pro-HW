@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Contacts Book API</title>
+   <link rel="stylesheet" href="./style.css"/>
+   <script defer src="./ContactAPI.js"></script>
+   <script defer src="./script.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+      <form class="contacts_form" id="addingForm">
+         <input class="input_field" id="firstName" type="text" placeholder="Enter your first name">
+         <input class="input_field" id="lastName" type="text" placeholder="Enter your last name">
+         <input class="input_field" id="phone" type="text" placeholder="Enter your phone number">
+         <button class="contacts_form_btn" id="addBtn" type="submit">Додати контакт</button>
+      </form>
+      <table class="contacts_list" id="contactsList">
+         <tr>
+            <td class="up">Name</td>
+            <td class="up">Surname</td>
+            <td class="up">Phone</td>
+            <td class="up">Delete</td>
+         </tr>
+      </table>
+   </div>
+</body>
+</html>
