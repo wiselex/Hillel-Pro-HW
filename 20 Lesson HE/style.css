@@ -1,0 +1,48 @@
+* {
+   box-sizing: border-box;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 25px;
+}
+.stickers_container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+   border-top: 3px solid black;
+}
+.sticker {
+   width: 250px;
+   min-height: 140px;
+   margin: 20px;
+   padding: 10px;
+   background-color: lightgreen;
+   border-radius: 4px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.sticker__delete_btn {
+   margin-bottom: 4px;
+   padding: 0;
+   background: none;
+   border: none;
+   cursor: pointer;
+   align-self: flex-end;
+}
+.sticker__description {
+   width: 100%;
+   min-height: 80px;
+   border: none;  
+}
+#createNewSticker {
+   color: black;
+   width: 100px;
+   margin: 20px;
+   padding: 10px 5px;
+   font-weight: bold;
+}
