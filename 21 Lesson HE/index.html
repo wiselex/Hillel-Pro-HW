@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JQuery Contacts</title>
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" defer></script>
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
+   <script src="./Contacts.js" defer></script>
+   <script src="./main.js" defer></script>
+</head>
+<body>
+   <div class="wrapper">
+      <form class="contacts_form" id="addingForm" onsubmit="return false">
+         <button class="contacts_form_btn adding_btn" id="addBtn" type="submit">Add Contact</button>
+      </form>
+      <ul class="contacts_list" id="contactsList" data-id="34">
+         <li class="contact_item">
+            <b>Name</b>
+            <b>Surname</b>
+            <b>Phone number</b>
+            <b>Action</b>
+         </li>
+      </ul>
+      <div id="contactModal" title="Contact">
+         <form id="contactForm" onsubmit="return false">
+            <fieldset>
+               <input type="hidden" name="id">
+               <div class="">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Alex">
+               </div>
+               <div class="">
+                  <label for="lastName">Surname</label>
+                  <input type="text" name="lastName" id="lastName"  placeholder="Smith">
+               </div>
+               <div class="">
+                  <label for="telephone">Phone number</label>
+                  <input type="tel" name="telephone" id="telephone" placeholder="+380...">
+               </div>
+               <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+         </form>
+      </div>
+   </div>
+</body>
+</html>
